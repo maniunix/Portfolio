@@ -4,17 +4,23 @@ body {
     /* padding-top: 5%; */
 }
 
+.container {
+    position: relative;
+}
+
 #side-panel {
     border: 1px solid rgb(216, 22, 22);
     width: 150px;
     padding: 10px;
-    height: 100vh;
-    position: relative;
+    height: 95vh;
+    position: fixed;
+    top: 10px;
 }
 
 .container {
     border: 1px solid yellow;
-    position: fixed;
+    position: static;
+    /* display: flex; */
 }
 
 #top-panel {
@@ -38,7 +44,8 @@ body {
     text-decoration: none;
     text-align: center;
     color: white;
-    font-size: 17px;
+    font-size: 12px;
+    font-style: solid;
 }
 
 #nav-side-panel a:hover{
@@ -48,4 +55,8 @@ body {
 li {
     list-style: none;
     margin-top: 50px;
+}
+
+#mid-panel {
+    border: 1px solid white;
 }
